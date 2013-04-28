@@ -13,7 +13,7 @@ type Fetcher interface {
 // depth.
 func Crawl(url string, depth int, fetcher Fetcher) {
     // TODO: Fetch URLs in parallel
-    // TODL: Don't fetch the same URL twice.
+    // TODO: Don't fetch the same URL twice.
     // This implementation doesn't do either:
     if depth <= 0 {
         return
